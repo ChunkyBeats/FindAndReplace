@@ -8,6 +8,7 @@ var findAndReplace = function(myString, initialWord, updatedWord) {
 
 $(document).ready(function() {
   var initString;
+
   $("form#thisString").submit(function() {
     initString = $("input#inputString").val();
     $(".phrase").text(initString);
