@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-2.1.4.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Find and Replace</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Presenting...</h1>
+      <h3>The most wonderfully basic Javascript program you EVER DID SEE!!</h3>
+      <p>To see the miracle at work, simply input a string of your choosing (Wow, keep it appropriate..  I know what you were thinking),
+        select a word in the string you want to replace, and a word to replace it with!</p>
+      <div id="stageOne">
+        <form id="thisString">
+          <div class="form-group">
+            <label for="inputString">Enter a phrase:</label>
+            <input id="inputString" type="text">
+          </div>
+          <button class="submit" type="btn" id="firstClick">Submit</button>
+        </form>
+      </div>
+      <div id="stageTwo">
+        <h3>Your phrase is: <span class="phrase"></span></h3>
+        <form id="replaceWordSearch">
+          <div class="form-group">
+            <label for="find">Word to Replace:</label>
+            <input id="find" type="text">
+          </div>
+          <div class="form-group">
+            <label for="replace">Replace with:</label>
+            <input id="replace" type="text">
+          </div>
+          <button class="submit" type="btn" id="secondClick">Submit</button>
+        </form>
+      </div>
+      <div id="stageFinal">
+        <h3>Your new phrase is....</h3>
+        <h3><span class="finalPhrase"></span></h3>
+        <br><p>... Hahah so lame.  Oh well, the program worked!</p>
+      </div>
+    </div>
+  </body>
+</html>
