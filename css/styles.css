@@ -8,10 +8,20 @@
 
 .container {
   border: 2px solid ;
+  border-radius: 20px;
   padding: 10px;
   margin-top: 10px;
+  background: #fff;
+    background: -moz-linear-gradient(#fff, #fff, #999);
+    background: -webkit-linear-gradient(#fff, #fff, #999);
+    background: -o-linear-gradient(#fff, #fff, #999);
 }
 
 body {
   text-align: center;
+}
+
+input:hover {
+  cursor: pointer;
+  background-color: lightblue;
 }
