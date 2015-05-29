@@ -2,7 +2,7 @@ describe('findAndReplace', function() {
   it("will search through a string to find a word", function() {
     var string = "Let's go to the mall!";
     var testWord = "base"
-    expect(findAndReplace(string, testWord)).to.equal(false);
+    expect(findAndReplace(string, testWord)).to.equal("Oops, something went wrong...");
   });
 
   it("will search through a string, find a word, and replace it", function() {

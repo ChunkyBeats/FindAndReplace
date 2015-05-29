@@ -2,7 +2,7 @@ var findAndReplace = function(myString, initialWord, updatedWord) {
   if (myString.search(initialWord) > 1) {
     return myString.replace(initialWord, updatedWord);
   } else {
-    return false;
+    return "Oops, something went wrong...";
   }
 }
 
