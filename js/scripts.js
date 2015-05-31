@@ -1,12 +1,23 @@
 var findAndReplace = function(myString, initialWord, updatedWord) {
-  if (myString.search(initialWord) > 1) {
+  if (myString.length === 0) {
+    return "You need to enter an initial string";
+  } else if (myString.search(initialWord) >= 0) {
     return myString.replace(initialWord, updatedWord);
   } else {
-    return "Oops! You entered something wrong...";
+    return "Oops! Your word wasnt in the String...";
   }
 }
 
+// var validate = function() {
+//   if ($("input#inputString").val().length > 0) {
+//     $("#firstClick").prop("disabled", false);
+//   } else {
+//     $("#firstClick").prob("disable", true);
+//   }
+// }
+
 $(document).ready(function() {
+  // validate();
   var initString;
 
   $("form#thisString").submit(function() {
